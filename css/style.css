@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: lightcyan;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-grid {
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    border: 1px solid black;
+}
+.square.bomb {
+    background-color: red;
+}
+.square.not-bomb {
+    background-color: lightblue;
+}
+#main-grid.easy .square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+#main-grid.hard .square {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+#main-grid.crazy .square {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
